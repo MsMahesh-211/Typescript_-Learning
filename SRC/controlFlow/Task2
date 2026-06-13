@@ -1,0 +1,9 @@
+let mobilenumber = 12345;
+let username="Mahesh";
+let email="mahi@gmail.com";
+let password="1234";
+let result = (mobilenumber===12345 &&
+   (username==="Mahesh" || email==="mahi@gmail.com") &&
+    password==="123")?
+     "login successful":"invalid credentials"
+     console.log(result);
