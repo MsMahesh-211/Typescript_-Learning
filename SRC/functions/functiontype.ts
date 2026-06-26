@@ -1,27 +1,27 @@
-// //Named Function
-// function add(a:number,b:number): number{
-//     return a+b;
+//Named Function
+function add(a:number,b:number): number{
+    return a+b;
 
-// }
-// console.log(add(3,4));
-// let sum1=3;
-// let sum2=4;
-// console.log(add(sum1,sum2));
+}
+console.log(add(3,4));
+let sum1=3;
+let sum2=4;
+console.log(add(sum1,sum2));
 //Arrow Function
-// const cube=(x:number)=>x*x*x;
-// console.log(cube(8));
+const cube=(x:number)=>x*x*x;
+console.log(cube(8));
 //Anonymous Function
-// const greet=function(name:string):string{
-//     return `Hello ${name}`;
-// }
-// console.log(greet('Mahesh'));
+const greet=function(name:string):string{
+    return `Hello ${name}`;
+}
+console.log(greet('Mahesh'));
 //Default Parameter
-// const greet =function(name:string="Guest"):string{
-//     return `Welcome ${name}`;
+const greetuser =function(name:string="Guest"):string{
+    return `Welcome ${name}`;
 
-// }
-// console.log(greet());
-// console.log(greet("Mahesh"));
+}
+console.log(greetuser());
+console.log(greetuser("Mahesh"));
 //optional Parameter
 function fullName(first:string, last?:string):string{
     return last? `${first} ${last}`: first;
