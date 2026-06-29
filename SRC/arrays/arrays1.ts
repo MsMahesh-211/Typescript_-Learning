@@ -19,3 +19,22 @@ let students=[
 ]
 let names=students.map(s=>s.name);
 console.log(names);
+//Filter
+let marks=[35,60,75,80,90]
+let passed=marks.filter(m=> m>=40);
+console.log(passed);
+//2
+let evens:number[]=[2,4,6];
+let even =nums.filter(n=>n%2==0);
+console.log(even);
+//mapping objects
+let employees=[
+    {id :101,role:"developer"},
+    {id :102,role:"tester"},
+    {id :103,role:"admin"}
+    
+];
+let testers=employees.filter(emp=>emp.role==="tester");
+console.log(testers);
+
+
