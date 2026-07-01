@@ -56,11 +56,51 @@
 // });
 // console.log("H2 Grand Total:", grandTotal);
 
-//=================================================
-//map()-easy levels
-const numbers: number[] = [1, 2, 3, 4, 5];
-const doubled=numbers.map(n=>n*2);
-console.log("E1 Doubled:", doubled);
+// //=================================================
+// //map()-easy levels
+// const numbers: number[] = [1, 2, 3, 4, 5];
+// const doubled=numbers.map(n=>n*2);
+// console.log("E1 Doubled:", doubled);
+
+// const scores: number[] = [50, 60, 70];
+// const bonusscores=scores.map(function(score){
+//     return score+10;
+// });
+// console.log("E2 Bonus Scores:", bonusscores);
+// //medium
+// const prices: number[] = [100, 300, 400];
+// const withgst=prices.map(function(price){
+//     return Math.round(price*1.18);
+// });
+// console.log("M1 Prices with GST:", withgst);
+// const age: number[] = [18, 25, 30,40,50];
+// const Adultflags=age.map(function(age){
+//     return age>=18;
+// });
+// console.log("M2 Adult Flags:", Adultflags);
+// const items: string[] = ["pen", "pencil", "eraser"];
+// const numberedItems=items.map(function(item,index){
+//     return `${index+1}. ${item}`;
+// });
+// console.log("M3 Numbered Items:", numberedItems);
+//hard
+type Product = { id: number; name: string; price: number };
+type ProductSummary = { label: string; total: number };
+
+const products: Product[] = [
+  { id: 1, name: "Laptop", price: 45000 },
+  { id: 2, name: "Mouse", price: 800 },
+  { id: 3, name: "Keyboard", price: 1500 },
+];
+
+const summaries: ProductSummary[] = products.map(function (p) {
+  return { label: p.name, total: p.price * 1.18 };
+});
+console.log("H1 Summaries:", summaries);
+//=====================================
+//filter()-easy levels
+
+
 
     
 
