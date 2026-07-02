@@ -65,6 +65,7 @@ console.log("Updated Scores:", updatedScores);
 console.log("High Scores:", highscores);
 console.log("Total:", total, "Average:", average.toFixed(2));
 console.log("Topper:", topper);
+//
 
 
 
