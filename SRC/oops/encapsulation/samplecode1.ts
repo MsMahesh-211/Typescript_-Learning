@@ -15,14 +15,14 @@ class Employee{ //parent class
     getSalary(){
         return this.salary;
     }
+    getAge(){
+        return this.age;
+    }
 }
     //child class
     class HR_Dep extends Employee{
-        displayEmployyee(){
-            console.log(this.age);
-         } //protected variable can be accessed in child class
-        
-         public department:string;
+    
+        public department:string;
 
     
         constructor(name:string,age:number,salary:number,department:string){
@@ -33,7 +33,7 @@ class Employee{ //parent class
             console.log(`Employee_Name:${this.name},Employee_Age:${this.age},Employee_Salary:${this.getSalary()},Employee_Department:${this.department}`);  
         }
         displayEmployee(){
-            console.log(`Employee_Name:${this.name},Employee_Age:${this.age},Employee_Salary:${this.getSalary()}`);
+            console.log(`Employee_Name:${this.name},Employee_Age:${this.getAge()},Employee_Salary:${this.getSalary()}`);
         }
         
         
@@ -48,5 +48,6 @@ class Employee{ //parent class
     //assigning public var to parent class
     console.log(`Employee_Name:${hr.name}`); //public variable can be accessed outside the class
     console.log(`Employee_Salary:${hr.getSalary()}`);
+    console.log(`Employee_Department:${hr.department}`); //public variable can be accessed outside the class
      //private variable can be accessed through getter method
 
