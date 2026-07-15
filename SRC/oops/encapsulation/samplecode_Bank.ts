@@ -17,7 +17,7 @@ class Bank{
         return this.accountNo;
     }
 }
-class Customer extends Bank{
+class Customer extends Bank{ //child class
     public branchName:string;
     constructor(customerName:string,accountNo:number,balance:number,branchName:string){
         super(customerName,accountNo,balance);
